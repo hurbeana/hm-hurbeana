@@ -9,6 +9,7 @@
       userSettings = {
         "window.dialogStyle" = "custom";
         "window.titleBarStyle" = "custom";
+        "latex-workshop.latex.outDir"= "%DIR%/aux";
       };
       extensions = with pkgs.vscode-extensions; [
         ms-python.python
