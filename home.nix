@@ -13,6 +13,7 @@ in {
       python3
       python311Packages.pygments
       texliveFull
+      thunderbird
     ];
 
     inherit username;
