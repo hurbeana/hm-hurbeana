@@ -4,7 +4,6 @@
   home = {
     packages = with pkgs; [
       trash-cli
-      fish
     ];
   };
 

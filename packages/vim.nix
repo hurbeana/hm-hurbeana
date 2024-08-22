@@ -1,12 +1,6 @@
 { pkgs, ... }:
 
 {
-  home = {
-    packages = with pkgs; [
-      vim
-    ];
-  };
-
   programs = {
 
     vim = {
