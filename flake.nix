@@ -17,7 +17,7 @@
       pkgs = import nixpkgs { inherit system; };
     in {
       homeConfigurations = {
-        hurbeana = home-manager.lib.homeManagerConfigruation {
+        hurbeana = home-manager.lib.homeManagerConfiguration {
           inherit pkgs;
           modules = [ ./home.nix ];
         };
