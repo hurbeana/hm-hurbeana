@@ -5,6 +5,7 @@ in {
   imports = [
     packages/cli.nix
     packages/vim.nix
+    packages/code.nix
   ];
 
   home = {

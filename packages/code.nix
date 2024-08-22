@@ -6,6 +6,10 @@
       enable = true;
       enableExtensionUpdateCheck = true;
       enableUpdateCheck = true;
+      userSettings = {
+        "window.dialogStyle" = "custom";
+        "window.titleBarStyle" = "custom";
+      };
       extensions = with pkgs.vscode-extensions; [
         ms-python.python
         ms-python.debugpy
@@ -21,6 +25,8 @@
         ibm.output-colorizer
         esbenp.prettier-vscode
         mechatroner.rainbow-csv
+        jnoortheen.nix-ide
       ];
+    };
   };
 }
