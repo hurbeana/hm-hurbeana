@@ -10,8 +10,7 @@ in {
 
   home = {
     packages = with pkgs; [
-      vscode
-      texliveMedium
+      texliveFull
     ];
 
     inherit username;
