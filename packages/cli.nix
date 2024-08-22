@@ -3,9 +3,10 @@
 {
   home = {
     packages = with pkgs; [
-      thrash-cli
+      trash-cli
       fish
     ];
+  };
 
   programs = {
 
@@ -30,11 +31,11 @@
         fzf_configure_bindings --processes=\\cp
       ";
       shellAbbrs = {
-        hms = "cd ${homeDirectory}/hm-hurbeana && make update";
+        hms = "cd /home/hurbeana/hm-hurbeana && make update";
         nrs = "sudo nixos-rebuild switch";
         rm = "trash";
         vic = "vim /etc/nixos/configuration.nix";
-        vih = "vim ${homeDirectory}/hm-hurbeana/home.nix";
+        vih = "vim /home/hurbeana/hm-hurbeana/home.nix";
         sys = "systemctl";
         syu = "systemctl --user";
       };
