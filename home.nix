@@ -1,4 +1,4 @@
-{ lib, pkgs, ... }: let
+{ inputs, outputs, lib, pkgs, ... }: let
   username = "hurbeana";
   homeDirectory = "/home/${username}";
 in {
@@ -6,6 +6,7 @@ in {
     packages/cli.nix
     packages/vim.nix
     packages/code.nix
+    packages/firefox.nix
   ];
 
   home = {

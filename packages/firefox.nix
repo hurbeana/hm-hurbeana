@@ -1,5 +1,4 @@
-{ config, pkgs, ... }:
-
+{ inputs, config, pkgs, ... }:
 {
     programs.firefox = {
         enable = true;
@@ -27,15 +26,14 @@
                 };
             };
         };
-        extensions = with pkgs.nur.repos.rycee.firefox-addons; [
-            ublock-origin
-            https-everywhere
-            ghostery
-        ];
         profiles = {
             default = {
                 id = 0;
                 name = "default";
+                extensions = with inputs.firefox-addons.packages.${pkgs.system}; [
+                    ublock-origin
+                    ghostery
+                ];
                 search = {
                     force = true;
                     default = "Google";
