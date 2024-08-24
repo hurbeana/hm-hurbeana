@@ -11,7 +11,8 @@
         "window.titleBarStyle" = "custom";
         "latex-workshop.latex.outDir" = "%DIR%/aux";
         "editor.wordWrap" = "wordWrapColumn";
-        "editor.wordWrapColmn" = 80;
+        "editor.ruler" = "[80]";
+        "git.enableSmartCommit" = true;
       };
       extensions = with pkgs.vscode-extensions; [
         ms-python.python
