@@ -4,16 +4,31 @@
   programs = {
     vscode = {
       enable = true;
-      enableExtensionUpdateCheck = true;
       enableUpdateCheck = true;
+      enableExtensionUpdateCheck = true;
       userSettings = {
+        # general things
         "window.dialogStyle" = "custom";
         "window.titleBarStyle" = "custom";
         "latex-workshop.latex.outDir" = "%DIR%/aux";
         "editor.wordWrap" = "wordWrapColumn";
         "editor.ruler" = "[80]";
         "git.enableSmartCommit" = true;
+        # Whitespaces
+        "files.trimTrailingWhitespace" = true;
+        "files.trimFinalNewlines" = true;
+        "files.insertFinalNewline" = true;
+        "diffEditor.ignoreTrimWhitespace" = false;
+        # Other
+        "telemetry.telemetryLevel" = "off";
+        "update.showReleaseNotes" = false;
       };
+      keybindings = [
+        {
+          key = "ctrl+space";
+          command = "workbench.action.terminal.toggleTerminal";
+        }
+      ];
       extensions = with pkgs.vscode-extensions; [
         ms-python.python
         ms-python.debugpy
